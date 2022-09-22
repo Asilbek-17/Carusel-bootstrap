@@ -4,32 +4,188 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Template project</title>
-  <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/main.css">
-  <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
+  <title>Carusel</title>
 </head>
 <body>
   <!-- Site header start -->
-  <header class="site-header">
-
+  <header class="site-header w-100 bg-dark py-1">
+    <div class="container-fluid">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-md-7 col-sm-12 col-12">
+          <ul class="nav justify-content-md-start justify-content-sm-center justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link text-light fs-5" aria-current="page" href="./index.html">Carucel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light ps-0" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-12 col-12">
+          <form class="d-flex justify-content-md-end justify-content-sm-center justify-content-center">
+            <input class="form-control me-2 search-inp" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="button">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </header>
   <!-- Site header finish -->
-
+  
   <!-- Site main start -->
   <main class="site-main">
     <!-- Hero section start -->
     <section class="hero">
-      
+      <div class="container-fluid p-0">
+        <div id="carouselExampleIndicators" class="carousel slide w-100" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner text-white">
+            <div class="carousel-item active">
+              <h2 class="fs-1 example-title">Example headline.</h2>
+              <p class="fs-5 representative-text">Some representative placeholder content for the first slide of the carousel.</p>
+              <button class="btn btn-primary">Sign up today</button>
+            </div>
+            <div class="carousel-item text-center">
+              <h2 class="fs-1 example-title">Another example headline.</h2>
+              <p class="fs-5 representative-text">Some representative placeholder content for the first slide of the carousel.</p>
+              <button class="btn btn-primary">Learn more</button>
+            </div>
+            <div class="carousel-item text-end">
+              <h2 class="fs-1 example-title">One more for good measure.</h2>
+              <p class="fs-5 representative-text">Some representative placeholder content for the first slide of the carousel.</p>
+              <button class="btn btn-primary">Browse gallery</button>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
     </section>
     <!-- Hero section finish -->
-  </main>
-  <!-- Site main finish -->
-
-  <!-- Site footer start -->
-  <footer class="site-footer">
-
-  </footer>
-  <!-- Site footer finish -->
-</body>
-</html>
+    <section class="card-section py-5">
+      <div class="container border-bottom pb-5">
+        <div class="row flex-md-row flex-sm-column flex-column align-items-center justify-content-md-between">
+          <div class="col-md-4 col-sm-12 col-12">
+            <div class="card border-0 text-center mx-auto mb-md-0 mb-sm-4 mb-5">
+              <svg class="bd-placeholder-img rounded-circle mx-auto" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+              <div class="card-body">
+                <h2 class="card-title fw-normal fs-2 text-secondary">Heading</h2>
+                <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-secondary somewhere-btn">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-12">
+            <div class="card border-0 text-center mx-auto mb-md-0 mb-sm-4 mb-5">
+              <svg class="bd-placeholder-img rounded-circle mx-auto" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+              <div class="card-body">
+                <h2 class="card-title fw-normal fs-2 text-secondary">Heading</h2>
+                <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-secondary somewhere-btn">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-12">
+            <div class="card border-0 text-center mx-auto mb-md-0 mb-sm-4 mb-5">
+              <svg class="bd-placeholder-img rounded-circle mx-auto" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+              <div class="card-body">
+                <h2 class="card-title fw-normal fs-2 text-secondary">Heading</h2>
+                <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-secondary somewhere-btn">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section>
+      <div class="container">
+        <div class="row flex-md-row flex-sm-column flex-column justify-content-between align-items-center pb-5 border-bottom">
+          <div class="col-md-7 col-sm-12 col-12">
+            <div class="info-box w-100 text-md-start text-sm-center text-center ms-0">
+              <h2 class="featurette-title lh-1 text-secondary">First featurette heading. <span class="text-muted opacity-50">It’ll blow your mind.</span></h2>
+              <p class="fs-5 opacity-75 placeholderr-text">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-12 col-12">
+            <div class="box-img ms-md-auto mx-sm-auto mx-auto">
+              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto text-center w-100" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#eee"></rect>
+                <text x="25%" y="40%" fill="#aaa" dy="56px">500x500</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="row flex-sm-column flex-column flex-md-row-reverse justify-content-between align-items-center pt-5 pb-5 border-bottom">
+          <div class="col-md-7 col-sm-12 col-12">
+            <div class="info-box ms-md-3 text-sm-center text-center">
+              <h2 class="featurette-title lh-1 text-secondary">Oh yeah, it’s that good.<span class="text-muted opacity-50">See for yourself.</span></h2>
+              <p class="fs-5 opacity-75 placeholderr-text">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-12 col-12">
+            <div class="box-img me-md-auto mx-sm-auto mx-auto">
+              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto text-center w-100" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#eee"></rect>
+                <text x="25%" y="40%" fill="#aaa" dy="56px">500x500</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="row flex-md-row flex-sm-column flex-column justify-content-between align-items-center pt-5 pb-5 border-bottom">
+          <div class="col-md-7 col-sm-12 col-12">
+            <div class="info-box text-md-start text-sm-center text-center">
+              <h2 class="featurette-title lh-1 text-secondary">And lastly, this one.<span class="text-muted opacity-50">Checkmate.</span></h2>
+              <p class="fs-5 opacity-75 placeholderr-text">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.p>
+              </div>
+            </div>
+            <div class="col-md-5 col-sm-12 col-12">
+              <div class="box-img ms-md-auto mx-sm-auto mx-auto">
+                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto text-center w-100" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#eee"></rect>
+                  <text x="25%" y="40%" fill="#aaa" dy="56px">500x500</text>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Site main finish -->
+    
+    <!-- Site footer start -->
+    <footer class="site-footer py-5">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-5 col-sm-12 col-12 text-lg-start text-sm-center text-center">
+            <p class="text-secondary">© 2017–2022 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+          </div>
+          <div class="col-lg-2 col-sm-12 col-12">
+            <p class="text-lg-end text-sm-center text-center mt-lg-0 mt-sm-2 mt-2"><a href="#">Back to top</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Site footer finish -->
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>
